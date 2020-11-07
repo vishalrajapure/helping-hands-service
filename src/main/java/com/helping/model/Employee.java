@@ -1,5 +1,7 @@
 package com.helping.model;
 
+import org.springframework.lang.NonNull;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -42,7 +44,7 @@ public class Employee extends AuditModel {
     private String skills;
 
     @Column(name = "EMPLOYEE_STATUS")
-    @NotBlank
+    @NonNull
     private Boolean employeeStatus;
 
     @Column(name = "PASSWORD")
@@ -67,11 +69,11 @@ public class Employee extends AuditModel {
     private String currentCompany;
 
     @Column(name = "CURRENT_PACKAGE")
-    @NotBlank
+    @NonNull
     private Long currentPackage;
 
     @Column(name = "EXPECTED_PACKAGE")
-    @NotBlank
+    @NonNull
     private Long expectedPackage;
 
     @Column(name = "CURRENT_LOCATION")
