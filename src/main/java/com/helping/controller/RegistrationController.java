@@ -1,11 +1,15 @@
 package com.helping.controller;
 
 
+import com.helping.model.Admin;
 import com.helping.model.Employee;
 import com.helping.repository.EmployeeRepository;
 import com.helping.service.EmployeeRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
@@ -24,8 +28,8 @@ public class RegistrationController {
         return employeeRegistrationService.registerEmployee(employee);
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "Testing";
+    @PostMapping("/registerAdmin")
+    public Admin registerAdmin(@RequestBody @Valid Admin admin) {
+        return employeeRegistrationService.registerAdmin(admin);
     }
 }
