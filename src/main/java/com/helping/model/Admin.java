@@ -1,55 +1,48 @@
 package com.helping.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+/*@Entity
+@Table(name = "ADMIN")*/
+public class Admin {
 
-@Entity
-@Table(name = "ADMIN")
-public class Admin extends AuditModel {
-
-    @Id
+   /* @Id
     @Column(name = "MOBILE_NUMBER")
     @Size(max = 10, min = 10, message = "Mobile number must be of 10 digits only")
-    @NotBlank
+    @NotBlank*/
     private String mobileNumber;
 
-    @Column(name = "FIRST_NAME")
-    @NotBlank
+   /* @Column(name = "FIRST_NAME")
+    @NotBlank*/
     private String firstName;
 
-    @Column(name = "LAST_NAME")
-    @NotBlank
+    /*@Column(name = "LAST_NAME")
+    @NotBlank*/
     private String lastName;
 
-    @Column(name = "EMAIL")
-    @NotBlank
+    /*@Column(name = "EMAIL")
+    @NotBlank*/
     private String email;
 
 
-    @Column(name = "WHATSAPP_NUMBER")
+    /*@Column(name = "WHATSAPP_NUMBER")
     @Size(max = 10, min = 10, message = "Whatsapp number must be of 10 digits only")
-    @NotBlank
+    @NotBlank*/
     private String whatsappNumber;
 
-    @Column(name = "PASSWORD")
-    @NotBlank
+    /*@Column(name = "PASSWORD")
+    @NotBlank*/
     private String password;
 
-    @Column(name = "JOBS_IN_TEXT")
-    @NotBlank
+    /*@Column(name = "JOBS_IN_TEXT")
+    @NotBlank*/
     private String jobsInText;
 
 
-    @Column(name = "LINKEDIN_LINK")
-    @NotBlank
+   /* @Column(name = "LINKEDIN_LINK")
+    @NotBlank*/
     private String linkedinLink;
 
-    @Column(name = "NAUKARI_LINK")
-    @NotBlank
+   /* @Column(name = "NAUKARI_LINK")
+    @NotBlank*/
     private String naukariLink;
 
 

@@ -1,3 +1,4 @@
+/*
 package com.helping.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -40,3 +41,4 @@ public abstract class AuditModel implements Serializable {
         return updatedAt;
     }
 }
+*/

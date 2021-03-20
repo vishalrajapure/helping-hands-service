@@ -1,3 +1,4 @@
+/*
 package com.helping.service;
 
 import com.helping.model.Admin;
@@ -10,3 +11,4 @@ public interface EmployeeRegistrationService {
     Admin registerAdmin(Admin admin);
 
 }
+*/

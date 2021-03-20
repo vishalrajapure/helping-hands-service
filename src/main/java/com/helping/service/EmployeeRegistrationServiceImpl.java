@@ -1,3 +1,4 @@
+/*
 package com.helping.service;
 
 import com.helping.exception.ResourceAlreadyExistException;
@@ -36,3 +37,4 @@ public class EmployeeRegistrationServiceImpl implements EmployeeRegistrationServ
             throw new ResourceAlreadyExistException("Admin", "Mobile number", admin.getMobileNumber());
     }
 }
+*/
