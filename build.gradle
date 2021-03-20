@@ -19,7 +19,8 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
-    compile 'org.apache.poi:poi:3.9'
+    compile 'org.apache.poi:poi:3.11'
+    compile 'org.apache.poi:poi-ooxml:3.11'
 	
     //sql conncector
     /*compile 'mysql:mysql-connector-java:5.1.46'*/
