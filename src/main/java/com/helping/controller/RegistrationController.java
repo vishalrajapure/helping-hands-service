@@ -123,8 +123,7 @@ public class RegistrationController {
             Workbook workbook = WorkbookFactory.create(inputStream);
 
             Sheet sheet = workbook.getSheetAt(0);
-            Employee e1 = getEmployee();
-            Object[] objects = createObjectArray(e1);
+            Object[] objects = createObjectArray(employee);
 
             int rowCount = sheet.getLastRowNum();
             Row row = sheet.createRow(++rowCount);
