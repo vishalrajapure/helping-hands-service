@@ -147,7 +147,7 @@ public class RegistrationController {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        return new Employee();
+        return employee;
     }
 
     @PostMapping("/login")
