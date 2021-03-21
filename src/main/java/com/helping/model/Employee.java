@@ -36,7 +36,7 @@ public class Employee {
     /*
         @Column(name = "EMPLOYEE_STATUS")
         @NonNull*/
-    private Boolean employeeStatus;
+    private String employeeStatus;
 
     /*@Column(name = "PASSWORD")
     @NotBlank*/
@@ -140,11 +140,11 @@ public class Employee {
         this.skills = skills;
     }
 
-    public Boolean getEmployeeStatus() {
+    public String getEmployeeStatus() {
         return employeeStatus;
     }
 
-    public void setEmployeeStatus(Boolean employeeStatus) {
+    public void setEmployeeStatus(String employeeStatus) {
         this.employeeStatus = employeeStatus;
     }
 
