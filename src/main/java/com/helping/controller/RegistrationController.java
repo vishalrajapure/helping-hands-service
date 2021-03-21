@@ -57,10 +57,10 @@ public class RegistrationController {
         }
         try {
             //Write the workbook in file system
-            FileOutputStream out = new FileOutputStream(new File("sampleExcel.xlsx"));
+            FileOutputStream out = new FileOutputStream(new File("sampleExcel2.xlsx"));
             workbook.write(out);
             out.close();
-            System.out.println("sampleExcel.xlsx written successfully on disk.");
+            System.out.println("sampleExcel2.xlsx written successfully on disk.");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -116,7 +116,7 @@ public class RegistrationController {
     @PostMapping("/register")
     public Employee registerEmployee(@RequestBody Employee employee) {
 
-        String excelFilePath = "sampleExcel.xlsx";
+        String excelFilePath = "sampleExcel2.xlsx";
 
         try {
             FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
@@ -139,7 +139,7 @@ public class RegistrationController {
             }
 
             inputStream.close();
-            FileOutputStream outputStream = new FileOutputStream("sampleExcel.xlsx");
+            FileOutputStream outputStream = new FileOutputStream("sampleExcel2.xlsx");
             workbook.write(outputStream);
             workbook.close();
             outputStream.close();
@@ -153,7 +153,7 @@ public class RegistrationController {
     @PostMapping("/login")
     public String readDoc(@RequestBody User user) {
         try {
-            FileInputStream file = new FileInputStream(new File("sampleExcel.xlsx"));
+            FileInputStream file = new FileInputStream(new File("sampleExcel2.xlsx"));
 
             //Create Workbook instance holding reference to .xlsx file
             XSSFWorkbook workbook = new XSSFWorkbook(file);
