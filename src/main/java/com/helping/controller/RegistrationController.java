@@ -22,7 +22,7 @@ public class RegistrationController {
 
     @GetMapping("/testHealth")
     public String testHealth() {
-        return "Helping hand is accessible!!";
+        return "Helping hand is accessible...rebuild once again!!";
     }
 
     @GetMapping("/createDoc")
