@@ -110,6 +110,8 @@ public class RegistrationController {
         objects[15] = employee.getSearchingDomain();
         objects[16] = employee.getSkills();
         objects[17] = employee.getWhatsappNumber();
+
+        //this is sample commit
         return objects;
     }
 
